@@ -13,13 +13,16 @@ body {
 }
 
 .font-14 {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .home-title {
     background: linear-gradient(transparent 0, transparent 40%, #0EFCFC 40%, #0EFCFC 75%, transparent 75%, transparent 100%);
     line-height: 1;
     display: inline;
+    background-size: 100% 40px;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .navbar {
