@@ -55,6 +55,16 @@ nav {
     z-index: 2000;
 }*/
 
+.btn{
+    background: #003831;
+    color: #fff;
+}
+
+.btn:hover{
+    background: #00473f;
+    color: #fff;
+}
+
 #services {
     background: #0A8071;
 }
@@ -111,10 +121,6 @@ nav {
 
 .about--card ul li {
     margin: 15px auto;
-}
-
-.image-wrapper {
-    /*    height: 70vh;*/
 }
 
 .image {
