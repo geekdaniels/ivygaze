@@ -173,6 +173,7 @@ nav {
     border: 1px solid #ECECEC;
     height: 56px;
     border-radius: 0px;
+    transition: all 0.1s;
 }
 
 #contact form input::placeholder {
@@ -194,6 +195,24 @@ nav {
     color: #BABABA;
     font-size: 14px;
 }
+
+.form-control:placeholder-shown+label {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.form-control+label {
+    position: absolute;
+    top: -26px;
+    left: 10px;
+    transition: all 0.1s;
+    opacity: 1;
+    background: white;
+    padding: 0 5px;
+    transform: translateY(calc(50% + 5px));
+}
+
+
 
 footer {
     background: #000;
