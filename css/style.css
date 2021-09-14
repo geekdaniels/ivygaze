@@ -55,12 +55,12 @@ nav {
     z-index: 2000;
 }*/
 
-.btn{
+.btn {
     background: #003831;
     color: #fff;
 }
 
-.btn:hover{
+.btn:hover {
     background: #00473f;
     color: #fff;
 }
@@ -121,6 +121,17 @@ nav {
 
 .about--card ul li {
     margin: 15px auto;
+}
+
+.image-wrapper {
+    height: 70vh;
+}
+
+.image-wrapper .image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
 }
 
 .image {
@@ -261,11 +272,22 @@ footer {
 }
 
 
-@media (min-width: 320px) and (max-width: 720px) {
+@media (min-width: 320px) and (max-width: 780px) {
     .navbar-light .navbar-nav .nav-link.active {
         color: #0A8071;
         border-bottom: 0px solid #0EFCFC;
         border-radius: 0px 0px 2px 2px;
+    }
+
+    .image-wrapper {
+        height: auto;
+    }
+
+    .image-wrapper .image {
+        position: initial;
+        top: 0;
+        right: 0;
+        height: 100%;
     }
 }
 
