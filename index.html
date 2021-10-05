@@ -514,13 +514,19 @@
           </div>
 
           <div class="col-lg-7 my-3">
-            <form class="mt-lg-5">
+            <form
+              class="mt-lg-5"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+            >
               <div class="form-row">
                 <div class="form-group col-md-6 position-relative my-3">
                   <input
                     type="text"
                     class="form-control"
                     id="full_name"
+                    name="full_name"
                     placeholder="Full Name"
                     auto-complete="given-name"
                   />
@@ -532,6 +538,7 @@
                     type="text"
                     class="form-control"
                     id="subject"
+                    nanme="subject"
                     placeholder="Subject"
                   />
                   <label for="subject">Subject</label>
@@ -544,6 +551,7 @@
                     type="email"
                     class="form-control"
                     id="email"
+                    name="email"
                     placeholder="Email Address"
                     auto-complete="email"
                   />
@@ -555,6 +563,7 @@
                 <textarea
                   class="form-control"
                   id="message"
+                  name="message"
                   rows="8"
                   placeholder="Message"
                 ></textarea>
@@ -563,7 +572,10 @@
 
               <div class="form-row">
                 <div class="form-group col-md-12">
-                  <button class="btn btn-block py-3 rounded-0 my-4">
+                  <button
+                    class="btn btn-block py-3 rounded-0 my-4"
+                    type="submit"
+                  >
                     Send Message
                   </button>
                 </div>
